@@ -1,0 +1,35 @@
+header {
+    text-align: center; /* Center the images horizontally */
+    position: relative; /* Create a positioning context for absolute positioning */
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+header img {
+    position: absolute; /* Position the images relative to the header */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the image in both directions */
+    z-index: 1; /* Ensure the images overlap */
+    top: 8px;
+}
+
+  /* Adjust the z-index to control the stacking order */
+header img:first-child {
+    z-index: 2;
+}
+
+header img:nth-child(3) {
+    top: 85px;
+    z-index: 3;
+}
+
+header img:last-child {
+    z-index: 2;
+    top: 43px;
+}
+
+
+
+
+
