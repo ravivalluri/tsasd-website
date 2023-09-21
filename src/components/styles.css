@@ -1,35 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 header {
-    text-align: center; /* Center the images horizontally */
-    position: relative; /* Create a positioning context for absolute positioning */
-    margin-top: 4px;
+    text-align: center;
+    position: relative;
     margin-bottom: 4px;
-}
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+
+  }
 
 header img {
-    position: absolute; /* Position the images relative to the header */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the image in both directions */
-    z-index: 1; /* Ensure the images overlap */
-    top: 8px;
-}
-
-  /* Adjust the z-index to control the stacking order */
-header img:first-child {
+    position: absolute;
     z-index: 2;
+    top: 0;
+    right: 0;
+}
+  
+.image-container {
+    flex: 1; /* Distribute available space equally among image containers */
+}
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
 }
 
-header img:nth-child(3) {
-    top: 85px;
-    z-index: 3;
+.logo-container img {
+  position: relative;
+}
+  
+.image-group img {
+  z-index: 3;
+  height: 26.99px !important;
+  top: 10%;
 }
 
-header img:last-child {
-    z-index: 2;
-    top: 43px;
+.image-rectangle-1 img {
+  height: 60px !important;
 }
 
+.logo-container img {
+  z-index: 4;
+  height: auto !important;
+}
 
+.image-container-mobile img {
+  position: relative;
+}
+.header-image {
+  background-image: url('../../public/Header-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  height: 200px;
+}
 
+@media screen and (max-width: 640px) {
+  .header-image {
+    transform: scale(1.2);
+    margin-top: 20px;
+  }
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .header-image {
+    transform: scale(1);
+  }
+}
 
-
+@media (min-width: 1024x) {
+  .header-image {
+    transform: scale(0.5);
+  }
+}

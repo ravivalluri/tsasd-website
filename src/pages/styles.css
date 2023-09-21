@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('/fonts/Museo_Slab_700.otf') format('opentype'); 
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('/fonts/MuseoSans_500.otf') format('opentype'); 
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    color: #002B7F;
+    text-align: center;
+    font-family: 'Museo Slab', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+p {
+    color: #4B4F54;
+    font-family: 'Museo Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.text-banner {
+    background-image: url('../../public/Banner.png');
+}
