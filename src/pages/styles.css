@@ -34,6 +34,11 @@ h1 {
     margin-left: 20%;
     margin-right: 20%;
 }
+@media screen and (max-width: 1200x) {
+    h1 {
+        font-size: 50px;
+    }
+}
 p {
     color: #4B4F54;
     font-family: 'Museo Sans', sans-serif;
@@ -50,7 +55,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 172px;
+    height: 250px;
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
@@ -61,10 +66,10 @@ p {
 
 @media screen and (max-width: 640px) {
     .text-banner {
-        height: 250px;
+        height: 400px;
     }
     .text-banner p {
-        padding-top: 8% !important;
+        padding-top: 20% !important;
     }
 }
 
@@ -73,7 +78,7 @@ p {
     font-size: 26px;
     color: #FFFFFF;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%;   
 }
 
 h2 {
@@ -103,6 +108,11 @@ h3 {
     background-size: contain;
     background-position: center;
     transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width: 640px) {
+    .image-container {
+        height: 550px;
+    }
 }
 
 .address p {
@@ -187,9 +197,19 @@ h3 {
     }
     .payment-container, .contact-container {
         width: 50%; /* Adjust the width to leave some spacing between the containers */
-        height: 45vh;
       }
   }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .payment-container, .contact-container {
+        height: 45vh;
+  }
+}
+  @media (min-width: 1200px) {
+    .payment-container, .contact-container {
+        height: 60vh;
+  }
+}
+
   @media (max-width: 640px) {
     .row-container {
       display: block; /* Stack containers on top of each other */
