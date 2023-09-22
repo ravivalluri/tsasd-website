@@ -76,15 +76,15 @@ p {
     width: 100%;
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1200px) {
   .text-banner {
-    height: 20vh;
+    height: 35vh;
   }
 }
 
 @media (min-width: 2000px) {
   .text-banner {
-    height: 25vh;
+    height: 45vh;
   }
 }
 
@@ -233,6 +233,12 @@ h3 {
         display: flex; /* Use flexbox to align content vertically */
         flex-direction: column; /* Stack content vertically */
       }
+  }
+
+  @media (min-width: 1500px) {
+    .payment-container, .contact-container {
+      height: 75vh;
+    }
   }
 
   @media (max-width: 640px) {
