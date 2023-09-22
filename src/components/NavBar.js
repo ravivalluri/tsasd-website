@@ -1,7 +1,8 @@
 export default function Navbar() {
 return (
-    <header className='header-image'>
-    </header>
+  <div className="header-container">
+    <header className='header-image'></header>
+  </div>
   );
 
 }
