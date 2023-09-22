@@ -1,6 +1,6 @@
 import * as fs from 'fs';
+import Image from 'next/image';
 import { Remarkable } from 'remarkable';
-import html from 'remark-html';
 import Container from "@/components/Container";
 import './styles.css'
 
@@ -16,25 +16,72 @@ export async function getStaticProps() {
     const titleMatch = html.match(/<h1>(.*?)<\/h1>/);
     const title = titleMatch ? titleMatch[1] : '';
 
-    const paraMatch = html.match(/<p>(.*?)<\/p>/);
-    const para = paraMatch ? paraMatch[1] : '';
+    const paraMatches = html.matchAll(/<p>(.*?)<\/p>/g);
 
-    const subtitle = html.match(/<h2>(.*?)<\/h2>/);
-    const sub = subtitle? subtitle[1] : '';
+    console.log({ paraMatches});
+
+    const paras = [];
+
+    for (const match of paraMatches) {
+      paras.push(match[1]); 
+    }
+
+    const h2 = html.match(/<h2>(.*?)<\/h2>/);
+    const sub1 = h2? h2[1] : '';
+
+    const h3 = html.match(/<h3>(.*?)<\/h3>/);
+    const sub2 = h3? h3[1] : '';
 
     return {
-      props: { title, para, sub }
+      props: { title, paras, sub1, sub2 }
     };
 }
 
-export default function Home({ title, para, sub }) {
+export default function Home({ title, paras, sub1, sub2 }) {
+  console.log({ paras });
     return (
       <Container>
         <h1>{title}</h1>
-      <p>{para}</p>
-      <div className='text-banner'>
-        <h2>{sub}</h2>
-      </div>
+        <p>{paras[0]}</p>
+        <div className='text-banner'>
+          <p>{paras[1]}</p>
+        </div>
+        <h2>{sub1}</h2>
+        <h3>{sub2}</h3>
+        <div className='image-container'>
+        </div>
+        <div className='address'>
+        <p>{paras[2]}</p>
+        <div className='address-container'>
+        <p>{paras[3]}</p>
+        <p>{paras[4]}</p>
+        <p>{paras[5]}</p>
+        </div>
+        <p>{paras[6]}</p>
+        </div>
+        <div className='button-container'>
+        <form action="https://tsasd.perfectgolfevent.com" method="get" target="_blank">
+        <button className='register-button'>Register Today</button>
+        </form>
+        </div>
+        <div className="row-container">
+        <div className="payment-container">
+        <p>{paras[10]}</p>
+        <p>{paras[11]}</p>
+        <p>{paras[12]}</p>
+        </div>
+        <div className='contact-container'>
+        <p>{paras[13]}</p>
+        <p>{paras[14]}</p>
+        <p>{paras[15]}</p>
+        <p>{paras[16]}</p>
+        </div>
+        </div>
+        <div className='address-container address-container-2'>
+        <p>{paras[7]}</p>
+        <p>{paras[8]}</p>
+        <p>{paras[9]}</p>
+        </div>
       </Container>
     )
 }

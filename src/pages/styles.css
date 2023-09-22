@@ -9,6 +9,17 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: 'Museo Sans 300';
+    src: url('/fonts/MuseoSans-300.otf') format('opentype'); 
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Museo Sans 700';
+    src: url('/fonts/MuseoSans_700.otf') format('opentype'); 
+    font-weight: 700;
+}
+
 body {
     margin: 0;
 }
@@ -35,5 +46,169 @@ p {
 }
 
 .text-banner {
-    background-image: url('../../public/Banner.png');
+    background-image: url('../../public/Component_LightBlue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 172px;
 }
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    .text-banner {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text-banner {
+        height: 250px;
+    }
+    .text-banner p {
+        padding-top: 8% !important;
+    }
+}
+
+.text-banner p {
+    padding-top: 5%;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #002B7F;
+    opacity: 1;
+    font-family: 'Museo Slab', sans-serif;
+    margin-top: 7%;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #002B7F;
+    opacity: 1;
+    font-family: 'Museo Sans';
+    font-weight: 700;
+    margin: 5%;
+}
+
+.image-container {
+    height: 986px;
+    position: relative;
+    background-image: url('../../public/TSASD_2023_GolfClassic_091923_v2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.address p {
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+}
+
+.address-container p {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+.address-container p:nth-child(2) {
+   font-family: 'Museo Sans 300';
+   font-weight: 300;
+}
+
+.address-container p:nth-child(3) {
+    font-family: 'Museo Sans 300';
+    font-weight: 300;
+ }
+
+ .register-button {
+    background-color: #002B7F;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    opacity: 1;
+    color: #FFFFFF;
+    width: 266px;
+    height: 64px;
+    font-size: 20px;
+    font-family: 'Museo Sans 700', sans-serif;
+    margin: 0 auto; /* Center horizontally */
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .address-container-2 p {
+    font-size: 16px !important;
+    color: #FFFFFF;
+  }
+  .address-container-2 {
+    background-image: url(../../public/Rectangle_Address.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .payment-container {
+    background-image: url(../../public/Component_Orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact-container {
+    background-image: url(../../public/Component_Green.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .row-container p {
+    color: #002B7F;
+    font-weight: 500;
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Museo Sans', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  @media (min-width: 640px){
+    .row-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .payment-container, .contact-container {
+        width: 50%; /* Adjust the width to leave some spacing between the containers */
+        height: 45vh;
+      }
+  }
+  @media (max-width: 640px) {
+    .row-container {
+      display: block; /* Stack containers on top of each other */
+    }
+    .payment-container, .contact-container {
+      width: 100%; /* Full width on mobile */
+      height: 45vh;
+    }
+  }
+  .payment-container p:first-child {
+    font-size: 30px;
+    font-family: 'Museo Slab', sans-serif;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+
+  .contact-container p:first-child {
+    font-size: 30px;
+    font-family: 'Museo Slab', sans-serif;
+    padding-top: 15%;
+    padding-bottom: 5%;
+  }
