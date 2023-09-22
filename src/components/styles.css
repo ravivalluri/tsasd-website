@@ -63,8 +63,11 @@ header img {
 
 @media screen and (max-width: 640px) {
   .header-image {
-    transform: scale(1.2);
-    margin-top: 20px;
+    transform: scale(1.5);
+    margin-top: 37px;
+    width: 315px;
+    background-position: 47% 50%;
+    height: 150px;
   }
 }
 @media (min-width: 640px) and (max-width: 1024px) {
