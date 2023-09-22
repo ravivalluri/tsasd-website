@@ -36,7 +36,13 @@ h1 {
 }
 @media screen and (max-width: 1200px) {
     h1 {
-        font-size: 50px !important;
+        font-size: 40px !important;
+        word-wrap: break-word;
+    }
+    h2 {
+      word-wrap: break-word;
+      margin-left: 2%;
+      margin-right: 2%;
     }
 }
 p {
@@ -69,7 +75,7 @@ p {
         height: 400px;
     }
     .text-banner p {
-        padding-top: 20% !important;
+        padding-top: 25% !important;
     }
 }
 
@@ -111,7 +117,7 @@ h3 {
 }
 @media screen and (max-width: 640px) {
     .image-container {
-        height: 550px;
+        height: 450px;
     }
 }
 
@@ -214,9 +220,13 @@ h3 {
     .row-container {
       display: block; /* Stack containers on top of each other */
     }
-    .payment-container, .contact-container {
+    .payment-container {
       width: 100%; /* Full width on mobile */
       height: 45vh;
+    }
+    .contact-container {
+      height: 55vh;
+      width: 100%;
     }
   }
   .payment-container p:first-child {

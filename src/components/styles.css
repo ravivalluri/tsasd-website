@@ -10,47 +10,6 @@ header {
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
 
-  }
-
-header img {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-}
-  
-.image-container {
-    flex: 1; /* Distribute available space equally among image containers */
-}
-  
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.logo-container img {
-  position: relative;
-}
-  
-.image-group img {
-  z-index: 3;
-  height: 26.99px !important;
-  top: 10%;
-}
-
-.image-rectangle-1 img {
-  height: 60px !important;
-}
-
-.logo-container img {
-  z-index: 4;
-  height: auto !important;
-}
-
-.image-container-mobile img {
-  position: relative;
 }
 .header-image {
   background-image: url('../../public/Header-image.png');
@@ -63,10 +22,10 @@ header img {
 
 @media screen and (max-width: 640px) {
   .header-image {
-    transform: scale(1.5);
-    margin-top: 37px;
-    width: 315px;
-    background-position: 47% 50%;
+    transform: scale(1);
+    margin-top: 0;
+    width: 100%;
+    background-position: 50% 50%;
     height: 150px;
   }
 }
