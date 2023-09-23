@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import Image from 'next/image';
 import { Remarkable } from 'remarkable';
 import Container from "@/components/Container";
+import Head from 'next/head';
 import './styles.css'
 
 
@@ -17,8 +18,6 @@ export async function getStaticProps() {
     const title = titleMatch ? titleMatch[1] : '';
 
     const paraMatches = html.matchAll(/<p>(.*?)<\/p>/g);
-
-    console.log({ paraMatches});
 
     const paras = [];
 
@@ -38,9 +37,44 @@ export async function getStaticProps() {
 }
 
 export default function Home({ title, paras, sub1, sub2 }) {
-  console.log({ paras });
     return (
       <Container>
+          <Head> <title>The Samoa Association San Diego</title>
+          <meta property="og:title" content="The Samoa Association San Diego" key="title" />
+          <meta
+  name="description"
+  content="We are a Non Profit 501(c)(3) charity organization based in San Diego, California"
+/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/TSASD_Logo_Badge_RGB.png" />
+
+    <link rel="apple-touch-icon" sizes="114x114" href="/TSASD_Logo_Badge_RGB@2x.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/TSASD_Logo_Badge_RGB@2x.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/TSASD_Logo_Badge_RGB@2x.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/TSASD_Logo_Badge_RGB@2x.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/TSASD_Logo_Badge_RGB@2x.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/TSASD_Logo_Badge_RGB@2x.png" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="icon" type="image/png" sizes="196x196" href="/TSASD_Logo_Badge_RGB.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/TSASD_Logo_Badge_RGB" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/TSASD_Logo_Badge_RGB@2x.png" />
+
+    <link rel="shortcut icon" href="/TSASD_Logo_Badge_RGB.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="msapplication-TileImage" content="/TSASD_Logo_Badge_RGB.png"/>
+    <meta name="msapplication-square70x70logo" content="/TSASD_Logo_Badge_RGB.png"/>
+    <meta name="msapplication-square150x150logo" content="/TSASD_Logo_Badge_RGB.png"/>
+    <meta name="msapplication-square144x144logo" content="/TSASD_Logo_Badge_RGB.png"/>
+    <meta name="msapplication-square310x310logo" content="/TSASD_Logo_Badge_RGB.png"/>
+   </Head>
         <h1 className='first-H1'>{title}</h1>
         <p className='first-para'>{paras[0]}</p>
         <div className='text-banner flex items-center justify-center text-center'>
