@@ -134,7 +134,7 @@ h3 {
 .image-container {
     height: 986px;
     position: relative;
-    background-image: url('../../public/TSASD_2023_GolfClassic_091923_v2.png');
+    background-image: url('../../public/TSASD_2023_GolfClassic_092223_v1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -247,13 +247,13 @@ h3 {
     }
     .payment-container {
       width: 100%; /* Full width on mobile */
-      height: 30vh;
+      height: 40vh;
       display: flex; /* Use flexbox to align content vertically */
       flex-direction: column; /* Stack content vertically */
     }
     .contact-container {
       width: 100%;
-      height: 35vh;
+      height: 55vh;
       display: flex; /* Use flexbox to align content vertically */
       flex-direction: column; /* Stack content vertically */
     }
@@ -266,4 +266,9 @@ h3 {
   .contact-container p:first-child {
     font-size: 30px;
     font-family: 'Museo Slab', sans-serif;
+  }
+
+  .contact-container p:last-child {
+    margin-left: 2%;
+    margin-right: 2%;
   }

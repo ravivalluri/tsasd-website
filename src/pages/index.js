@@ -61,7 +61,7 @@ export default function Home({ title, paras, sub1, sub2 }) {
         </div>
         <div className='button-container'>
         <form action="https://tsasd.perfectgolfevent.com" method="get" target="_blank">
-        <button className='register-button'>Register Today</button>
+        {/* <button className='register-button'>Register Today</button> */}
         </form>
         </div>
         <div className="row-container">
@@ -73,8 +73,8 @@ export default function Home({ title, paras, sub1, sub2 }) {
         <div className='contact-container bg-cover h-full flex items-center justify-center text-center'>
         <p className='text-3xl mx-auto'>{paras[13]}</p>
         <p className='text-3xl mx-auto'>{paras[14]}</p>
-        <p className='text-3xl mx-auto'>{paras[15]}</p>
-        <p className='text-3xl mx-auto'>{paras[16]}</p>
+        <p className='text-3xl mx-auto'><a href="tel: +1(702)506-3603">{paras[15]}</a></p>
+        <p className='text-3xl mx-auto'><a href = "mailto: info@TSASD.org">{paras[16]}</a></p>
         </div>
         </div>
         <div className='address-container address-container-2'>

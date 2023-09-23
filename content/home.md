@@ -34,6 +34,6 @@ Interested in learning more or becoming a member?
 
 Contact us:
 
-XXX-XXX-XXXX
++1 (702) 506-3603
 
 Info@TSASD.org
