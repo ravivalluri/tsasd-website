@@ -73,7 +73,7 @@ export default function Home({ title, paras, sub1, sub2 }) {
     <meta name="msapplication-square70x70logo" content="/TSASD_Logo_Badge_RGB.png"/>
     <meta name="msapplication-square150x150logo" content="/TSASD_Logo_Badge_RGB.png"/>
     <meta name="msapplication-square144x144logo" content="/TSASD_Logo_Badge_RGB.png"/>
-    <meta name="msapplication-square310x310logo" content="/TSASD_Logo_Badge_RGB.png"/>
+    <meta name="msapplication-square310x310logo" content="/TSASD_Logo_Badge_RGB@2x.png"/>
    </Head>
         <h1 className='first-H1'>{title}</h1>
         <p className='first-para'>{paras[0]}</p>

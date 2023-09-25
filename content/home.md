@@ -10,11 +10,11 @@ Our mission is to promote and enhance understanding of the Samoan culture throug
 
 November 11, 2023
 
-Admiral Baker South Golf Course
+Chula Vista Golf Course
 
-2400 Admiral Baker Rd #3604
+4475 Bonita Road
 
-San Diego, CA 92124
+Bonita, CA 92124
 
 Shotgun Start @ 8:30 AM
 
