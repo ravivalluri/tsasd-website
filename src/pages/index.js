@@ -94,8 +94,8 @@ export default function Home({ title, paras, sub1, sub2 }) {
         <p>{paras[6]}</p>
         </div>
         <div className='button-container'>
-        <form action="https://tsasd.perfectgolfevent.com" method="get" target="_blank">
-        {/* <button className='register-button'>Register Today</button> */}
+        <form action="https://tsasd-golf-classic.perfectgolfevent.com" method="get" target="_blank">
+        <button className='register-button'>Register Today</button>
         </form>
         </div>
         <div className="row-container">

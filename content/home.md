@@ -14,7 +14,7 @@ Chula Vista Golf Course
 
 4475 Bonita Road
 
-Bonita, CA 92124
+Bonita, CA 91902
 
 Shotgun Start @ 8:30 AM
 
@@ -34,6 +34,6 @@ Interested in learning more or becoming a member?
 
 Contact us:
 
-+1 (702) 506-3603
++1 (619) 663-8699
 
 Info@TSASD.org
