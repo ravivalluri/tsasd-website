@@ -93,7 +93,7 @@ export default function Home({ title, paras, sub1, sub2 }) {
         <h3 className='first-H3'>{sub2}</h3>
         <div className='image-container-1'>
         </div>
-        <h3 className='second-H3'>{sub2}</h3>
+        <h3 className='second-H3'>{sub3}</h3>
         <div className='image-container-2'>
         </div>
         <div className='address'>
