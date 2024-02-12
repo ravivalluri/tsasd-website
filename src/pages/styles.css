@@ -128,7 +128,10 @@ h3 {
     font-family: 'Museo Sans';
     font-weight: 700;
 }
-.first-H3, .second-H3 {
+.first-H3 {
+  margin: 3%;
+}
+.second-H3 {
   margin: 3%;
 }
 .image-container-1 {
