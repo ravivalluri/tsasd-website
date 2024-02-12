@@ -38,15 +38,6 @@ export async function getStaticProps() {
     };
 }
 
-const downloadPDF = () => {
-  var downloadLink = document.createElement("a");
-  downloadLink.href = "/TSASD 2024 Scholarship Application Form.pdf";
-  downloadLink.download = "TSASD_2024_Scholarship_Application_Form.pdf";
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
-}
-
 export default function Home({ title, paras, sub1, sub2, sub3 }) {
     return (
       <Container>
@@ -108,7 +99,7 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         {/* <p>{paras[6]}</p> */}
         </div>
         <div className='button-container'>
-        <button className='register-button' onClick={downloadPDF}>Download Application</button>
+        <a className='register-button' href="/TSASD 2024 Scholarship Application Form.pdf">Download Application</a>
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">
