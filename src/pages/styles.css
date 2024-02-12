@@ -142,7 +142,7 @@ h3 {
     background-size: contain;
     background-position: center;
     transition: transform 0.3s ease-in-out;
-    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 .image-container-2 {
   height: 986px;
@@ -193,13 +193,13 @@ h3 {
     font-size: 20px;
     font-family: 'Museo Sans 700', sans-serif;
     margin: 0 auto; /* Center horizontally */
-    margin-bottom: 25px;
     padding: 15px;
   }
   .button-container {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding-bottom: 50px;
   }
 
   .address-container-2 p {
