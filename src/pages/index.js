@@ -117,16 +117,16 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         <p className='text-3xl mx-auto'>{paras[5]}</p>
         </div>
         <div className='contact-container bg-cover h-full flex items-center justify-center text-center'>
-        <p className='text-3xl mx-auto'>{paras[6]}</p>
-        <p className='text-3xl mx-auto'>{paras[7]}</p>
-        <p className='text-3xl mx-auto'><a href="tel: +1(702)506-3603">{paras[8]}</a></p>
-        <p className='text-3xl mx-auto'><a href = "mailto: info@TSASD.org">{paras[9]}</a></p>
+        <p className='text-3xl mx-auto'>{paras[9]}</p>
+        <p className='text-3xl mx-auto'>{paras[10]}</p>
+        <p className='text-3xl mx-auto'><a href="tel: +1(702)506-3603">{paras[11]}</a></p>
+        <p className='text-3xl mx-auto'><a href = "mailto: info@TSASD.org">{paras[12]}</a></p>
         </div>
         </div>
         <div className='address-container address-container-2'>
-        <p>{paras[10]}</p>
-        <p>{paras[11]}</p>
-        <p>{paras[12]}</p>
+        <p>{paras[6]}</p>
+        <p>{paras[7]}</p>
+        <p>{paras[8]}</p>
         </div>
       </Container>
     )
