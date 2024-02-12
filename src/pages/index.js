@@ -30,7 +30,7 @@ export async function getStaticProps() {
 
     const h3 = html.match(/<h3>(.*?)<\/h3>/);
     const sub2 = h3? h3[1] : '';
-    const sub3 = h3? h3[2] : '';
+    const sub3 = h4? h4[1] : '';
 
     return {
       props: { title, paras, sub1, sub2, sub3 }

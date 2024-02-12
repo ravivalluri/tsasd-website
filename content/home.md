@@ -8,7 +8,7 @@ Our mission is to promote and enhance understanding of the Samoan culture throug
 
 ### TSASD March Breakfast Fundraiser
 
-### TSASD Scholarship Program
+#### TSASD Scholarship Program
 
 Application Deadline: May 3, 2024
 
