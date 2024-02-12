@@ -131,18 +131,30 @@ h3 {
 .first-H3 {
   margin: 3%;
 }
-.image-container {
+.image-container-1 {
     height: 986px;
     position: relative;
-    background-image: url('../../public/SOCIAL_TSASD_2023_GolfClassic_102423.jpg');
+    background-image: url('../../public/TSASD_2024_BreakfastFundraiser_Digital.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     transition: transform 0.3s ease-in-out;
 }
+.image-container-2 {
+  height: 986px;
+  position: relative;
+  background-image: url('../../public/TSASD_2024_Scholarship_Digital.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
 @media screen and (max-width: 640px) {
-    .image-container {
+    .image-container-1 {
         height: 450px;
+    }
+    .image-container-2 {
+      height: 450px;
     }
 }
 

@@ -36,6 +36,15 @@ export async function getStaticProps() {
     };
 }
 
+const downloadPDF = () => {
+  var downloadLink = document.createElement("a");
+  downloadLink.href = "/TSASD 2024 Scholarship Application Form.pdf";
+  downloadLink.download = "TSASD_2024_Scholarship_Application_Form.pdf";
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+}
+
 export default function Home({ title, paras, sub1, sub2 }) {
     return (
       <Container>
@@ -82,21 +91,22 @@ export default function Home({ title, paras, sub1, sub2 }) {
         </div>
         <h2 className='first-H2'>{sub1}</h2>
         <h3 className='first-H3'>{sub2}</h3>
-        <div className='image-container'>
+        <div className='image-container-1'>
+        </div>
+        <h3 className='second-H3'>{sub2}</h3>
+        <div className='image-container-2'>
         </div>
         <div className='address'>
         <p>{paras[2]}</p>
-        <div className='address-container'>
+        {/* <div className='address-container'>
         <p>{paras[3]}</p>
         <p>{paras[4]}</p>
         <p>{paras[5]}</p>
-        </div>
-        <p>{paras[6]}</p>
+        </div> */}
+        {/* <p>{paras[6]}</p> */}
         </div>
         <div className='button-container'>
-        <form action="https://tsasd-golf-classic.perfectgolfevent.com" method="get" target="_blank">
-        <button className='register-button'>Register Today</button>
-        </form>
+        <button className='register-button' onClick={downloadPDF}>Register Today</button>
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">

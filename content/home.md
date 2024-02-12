@@ -6,17 +6,11 @@ Our mission is to promote and enhance understanding of the Samoan culture throug
 
 ## Upcoming Events
 
-### 3RD Annual TSASD Golf Classic
+### TSASD March Breakfast Fundraiser
 
-November 11, 2023
+#### TSASD Scholarship Program
 
-Chula Vista Golf Course
-
-4475 Bonita Road
-
-Bonita, CA 91902
-
-Shotgun Start @ 8:30 AM
+Application Deadline: May 3, 2024
 
 PO Box 191072
 
