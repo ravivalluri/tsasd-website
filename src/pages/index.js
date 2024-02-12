@@ -108,7 +108,7 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         {/* <p>{paras[6]}</p> */}
         </div>
         <div className='button-container'>
-        <button className='register-button' onClick={downloadPDF}>Register Today</button>
+        <button className='register-button' onClick={downloadPDF}>Download Application</button>
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">
