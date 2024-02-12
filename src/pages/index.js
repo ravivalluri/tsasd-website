@@ -112,9 +112,9 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">
-        <p className='text-3xl mx-auto'>{paras[3]}</p>
-        <p className='text-3xl mx-auto'>{paras[4]}</p>
-        <p className='text-3xl mx-auto'>{paras[5]}</p>
+        <p className='text-3xl mx-auto'>{paras[6]}</p>
+        <p className='text-3xl mx-auto'>{paras[7]}</p>
+        <p className='text-3xl mx-auto'>{paras[8]}</p>
         </div>
         <div className='contact-container bg-cover h-full flex items-center justify-center text-center'>
         <p className='text-3xl mx-auto'>{paras[9]}</p>
@@ -124,9 +124,9 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         </div>
         </div>
         <div className='address-container address-container-2'>
-        <p>{paras[6]}</p>
-        <p>{paras[7]}</p>
-        <p>{paras[8]}</p>
+        <p>{paras[3]}</p>
+        <p>{paras[4]}</p>
+        <p>{paras[5]}</p>
         </div>
       </Container>
     )
