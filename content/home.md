@@ -10,6 +10,8 @@ Our mission is to promote and enhance understanding of the Samoan culture throug
 
 #### TSASD SIVA Night Fundraiser 08-31-2024
 
+Application Deadline: May 3, 2024
+
 PO Box 191072
 
 San Diego CA 92159
