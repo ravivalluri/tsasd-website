@@ -90,7 +90,6 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         <div className='image-container-2'>
         </div>
         <div className='address'>
-        <p>{paras[2]}</p>
         {/* <div className='address-container'>
         <p>{paras[3]}</p>
         <p>{paras[4]}</p>
@@ -103,21 +102,21 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">
+        <p className='text-3xl mx-auto'>{paras[5]}</p>
         <p className='text-3xl mx-auto'>{paras[6]}</p>
         <p className='text-3xl mx-auto'>{paras[7]}</p>
-        <p className='text-3xl mx-auto'>{paras[8]}</p>
         </div>
         <div className='contact-container bg-cover h-full flex items-center justify-center text-center'>
+        <p className='text-3xl mx-auto'>{paras[8]}</p>
         <p className='text-3xl mx-auto'>{paras[9]}</p>
-        <p className='text-3xl mx-auto'>{paras[10]}</p>
-        <p className='text-3xl mx-auto'><a href="tel: +1(702)506-3603">{paras[11]}</a></p>
-        <p className='text-3xl mx-auto'><a href = "mailto: info@TSASD.org">{paras[12]}</a></p>
+        <p className='text-3xl mx-auto'><a href="tel: +1(702)506-3603">{paras[10]}</a></p>
+        <p className='text-3xl mx-auto'><a href = "mailto: info@TSASD.org">{paras[11]}</a></p>
         </div>
         </div>
         <div className='address-container address-container-2'>
+        <p>{paras[2]}</p>
         <p>{paras[3]}</p>
         <p>{paras[4]}</p>
-        <p>{paras[5]}</p>
         </div>
       </Container>
     )
