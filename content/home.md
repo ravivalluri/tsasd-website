@@ -6,9 +6,9 @@ Our mission is to promote and enhance understanding of the Samoan culture throug
 
 ## Upcoming Events
 
-### TSASD Samoan Culture Class
+### TSASD SIVA Night Fundraiser 08-31-2024
 
-#### TSASD SIVA Night Fundraiser 08-31-2024
+#### TSASD Samoan Culture Class
 
 PO Box 191072
 

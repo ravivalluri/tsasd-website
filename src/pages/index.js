@@ -98,7 +98,7 @@ export default function Home({ title, paras, sub1, sub2, sub3 }) {
         {/* <p>{paras[6]}</p> */}
         </div>
         <div className='button-container'>
-        <a className='register-button' href="/REGISTRATION_FORM_FOR_SAMOA_CULTURAL_CLASSES_2024.pdf" target="_blank">Download Registration Form</a>
+        <a className='register-button' href="https://docs.google.com/forms/d/e/1FAIpQLSc1bJCIF99Nh6jXBYs_Grnz25yGJbUOl_YWM0Cwt5j1Zm5KjQ/viewform?pli=1" target="_blank">Download Registration Form</a>
         </div>
         <div className="row-container">
         <div className="payment-container bg-cover h-full flex items-center justify-center text-center">
